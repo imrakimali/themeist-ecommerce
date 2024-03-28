@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>E-commerce project</title>
+	<link rel="icon" href="assets/images/logoicon.png" type="image/x-icon">
+
+	<!-- aos cdn link add  start -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- aos cdn link add  end -->
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./assets/css/icons/material/styles.min.css">
+	<link rel="stylesheet" href="/assets/css/icons/fontawesome/styles.min.css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="global_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="assets/js/plugins/ui/slinky.min.js"></script>
+	<script src="assets/js/plugins/ui/fab.min.js"></script>
+	<script src="assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="assets/js/plugins/forms/selects/select2.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/demo_pages/components_modals.js"></script>
+	<script src="assets/js/demo_pages/dashboard.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/lines.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+	<!-- /theme JS files -->
+</head>
+
+<body>
+
+	<!-- Page header -->
+	<div class="navbar navbar-white container mt-3 d-flex justify-content-between align-items-center">
+
+		<div class="navbar-brand">
+			<a href="index.html">
+				<img src="assets/images/main-logo.png" alt="themeist">
+			</a>
+		</div>
+		<div>
+			<div class="nav-item dropdown dropdown-user">
+				<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown"
+					aria-expanded="false">
+					<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2"
+						height="34" alt="">
+					<span>Victoria</span>
+				</a>
+
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="user-page.html" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+					<a href="index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	</div>
+	<!-- /page header -->
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-white navbar-expand-md container">
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse font-size-lg" id="navbar">
+			<ul class="navbar-nav ">
+				<li><a class="nav-link text-black-50" href="index-after-login.html">Home</a></li>
+				<li><a class="nav-link text-black-50" href="about-after-login.html">About</a></li>
+				<li><a class="nav-link text-black-50" href="gridview-after-login.html">Our Services</a></li>
+				<li><a class="nav-link text-black-50" href="contact-after-login.html">Contact Us</a></li>
+				<li><a class="nav-link text-black-50" href="help-after-login.html">Help</a></li>
+			</ul>
+			<!-- /navbar content -->
+			<div class="d-flex m-auto">
+				<form action="" class="pr-2">
+					<input type="text" class="form-control" placeholder="Search Your product" size="50">
+				</form>
+				<a href="cart.html" type="button" class="btn bg-warning"><i
+						class="icon-cart"></i>&nbsp;Your&nbsp;cart</a>
+				<!-- <a href="cart.html" class="btn btn-warning" type="button"><i class="icon-cart"></i>&nbsp;Your&nbsp;Cart</a> -->
+			</div>
+		</div>
+		<div class="d-md-none ml-auto">
+			<button class="border-0 pt-2" type="button" data-toggle="collapse" data-target="#navbar">
+				<i class="icon-list"></i>
+			</button>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+	<!-- header grid view content  -->
+	<div class="container mt-4">
+		<h1 class="font-weight-bold">Our Products</h1>
+		<div class="row  ">
+
+			<div class=" col-sm-6 col-12 col-md-6">
+				<p>24 products found</p>
+			</div>
+			<div class=" col-sm-6 col-12 col-md-6  text-end">
+				<a href="listview.html"><i class="icon-list px-1 text-dark"></i></a>
+				<!-- <i class="mi-border-right px-1"></i>
+				<i class="mi-border-clear"></i> -->
+				<span class="border ml-2 px-4">show:50 <i class="icon-arrow-down5 pl-5"></i></span>
+			</div>
+		</div>
+	</div>
+	<!-- header grid view content  -->
+
+	<!-- grid view product list -->
+	<div class="container my-3">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-2">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-2">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="assets/images/slide1.jpg" alt="">
+
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited
+							evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+					</div>
+
+					<div class="card-footer d-flex justify-content-center">
+						<span class="">
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-full2 font-size-base text-warning-300"></i>
+							<i class="icon-star-half font-size-base text-warning-300"></i>
+							<span class="text-muted ml-2">(12)</span>
+						</span>
+					</div>
+					<div class="d-flex justify-content-around py-2">
+						<span class="pt-2 fs-4">$450</span>
+						<button class="btn btn-warning">+ Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- grid view product list -->
+
+	<!-- pagination -->
+	<div class=" container card-body">
+		<ul class="pagination pagination-separated ">
+			<li class="page-item "><a href="#" class="page-link">&larr; &nbsp;</a></li>
+			<li class="page-item  active"><a href="#" class="page-link">1</a></li>
+			<li class="page-item"><a href="#" class="page-link">2</a></li>
+			<li class="page-item "><a href="#" class="page-link">3</a></li>
+			<li class="page-item"><a href="#" class="page-link">4</a></li>
+			<li class="page-item"><a href="#" class="page-link "> &nbsp; &rarr;</a></li>
+		</ul>
+	</div>
+
+	<!-- pagination -->
+
+	<!-- contact menu  -->
+	<hr class="text-black-50">
+	<div class="container-fluid text-black d-flex justify-content-around row">
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h2>themeist</h2>
+			<address>Sector 7,Uttara Dhaka Bangladesh</address>
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h3 class="fs-5">Main Menu</h3>
+			<a href="index.html">Home</a><br>
+			<a href="about.html">About Us</a><br>
+			<a href="gridview.html">Our Services</a><br>
+			<a href="help.html">Help</a>
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h3>Discover</h3>
+			<p>The Team</p>
+			<p>Our History</p>
+			<p>Brand Moto</p>
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h3>Find Us On</h3>
+			<p>Facebook</p>
+			<p>Twitter</p>
+			<p>Instagram</p>
+		</div>
+	</div>
+	<!-- contact menu  -->
+
+	<!-- Footer -->
+	<hr>
+	<div class="navbar navbar-expand-lg container-fluid">
+		<div class="text-center d-lg-none w-100">
+			<button type="button" class=" border-0 btn btn-secondary dropdown-toggle" data-toggle="collapse"
+				data-target="#navbar-footer">
+				<i class="icon-unfold mr-2"></i>
+				Footer
+			</button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-footer">
+			<span class="navbar-text font-weight-bold fs-5">@themeist</span>
+		</div>
+	</div>
+	<!-- /footer -->
+	<!-- aos js cdn link add start -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- aos js cdn link add start -->
+
+	<script>
+		// Alert dialog
+		$('#alert-custom').on('click', function () {
+			bootbox.alert({
+				title: 'Please login first!',
+				message: 'Only registered members can access cart.'
+			});
+		});
+	</script>
+	<!-- bootstrap5 bundle start -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<!-- bootstrap5 bundle  end -->
+
+</body>
+
+</html>

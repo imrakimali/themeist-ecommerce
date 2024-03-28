@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>E-commerce project</title>
+	<link rel="icon" href="assets/images/logoicon.png" type="image/x-icon">
+
+	<!-- aos cdn link add  start -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- aos cdn link add  end -->
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./assets/css/icons/material/styles.min.css">
+	<link rel="stylesheet" href="/assets/css/icons/fontawesome/styles.min.css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="global_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="assets/js/plugins/ui/slinky.min.js"></script>
+	<script src="assets/js/plugins/ui/fab.min.js"></script>
+	<script src="assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="assets/js/plugins/forms/selects/select2.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/demo_pages/components_modals.js"></script>
+	<script src="assets/js/demo_pages/dashboard.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/lines.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+	<script src="assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+	<!-- /theme JS files -->
+</head>
+
+<body>
+
+	<!-- Page header -->
+	<div class="navbar navbar-white container mt-3 d-flex justify-content-between align-items-center">
+
+		<div class="navbar-brand">
+			<a href="index.html">
+				<img src="assets/images/main-logo.png" alt="themeist">
+			</a>
+		</div>
+		<div>
+			<a href="login.html" type="button" class="btn btn-success border-0"> Login</a>
+		</div>
+
+	</div>
+
+
+	</div>
+	<!-- /page header -->
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-white navbar-expand-md container">
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse font-size-lg" id="navbar">
+			<ul class="navbar-nav ">
+				<li><a class="nav-link text-black-50" href="index.html">Home</a></li>
+				<li><a class="nav-link text-black-50" href="about.html">About</a></li>
+				<li><a class="nav-link text-black-50" href="gridview.html">Our Services</a></li>
+				<li><a class="nav-link text-black-50" href="contact.html">Contact Us</a></li>
+				<li><a class="nav-link text-black-50" href="help.html">Help</a></li>
+			</ul>
+			<!-- /navbar content -->
+			<div class="d-flex m-auto">
+				<form action="" class="pr-2">
+					<input type="text" class="form-control" placeholder="Search Your product" size="50">
+				</form>
+				<button type="button" class="btn bg-warning" id="alert-custom"><i
+						class="icon-cart"></i>&nbsp;Your&nbsp;cart</button>
+				<!-- <a href="cart.html" class="btn btn-warning" type="button"><i class="icon-cart"></i>&nbsp;Your&nbsp;Cart</a> -->
+			</div>
+		</div>
+		<div class="d-md-none ml-auto">
+			<button class="border-0 pt-2" type="button" data-toggle="collapse" data-target="#navbar">
+				<i class="icon-list"></i>
+			</button>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Content area -->
+			<div class="content">
+
+				<div class="container">
+					<div class="text-center mb-3 py-2">
+						<h2 class="font-weight-semibold mb-1">All questions are answered</h2>
+						<span class="text-muted d-block">Am if number no up period regard sudden better. Decisively
+							surrounded all admiration</span>
+					</div>
+					<div class="w-100 overflow-auto order-2 order-md-1">
+						<div class="font-size-sm text-uppercase font-weight-semibold text-muted pt-2 mb-2">People
+							normaly ask</div>
+						<!-- Questions list -->
+						<div class="card-group-control card-group-control-right">
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question1">
+											<i class="icon-help mr-2 text-slate"></i> A without walking some objective?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question1" class="collapse">
+									<div class="card-body">
+										She exposed painted fifteen are noisier mistake led waiting. Surprise not
+										wandered
+										speedily husbands although yet end. Are court tiled cease young built fat one
+										man
+										taken. We highest ye friends is exposed equally in. Ignorant had too strictly
+										followed. Astonished as travelling assistance or unreserved oh pianoforte ye.
+										Five
+										with seen put need tore add neat.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 25, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 320</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 14</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question2">
+											<i class="icon-help mr-2 text-slate"></i> She exposed painted fifteen are
+											noisier?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question2" class="collapse">
+									<div class="card-body">
+										There worse by an of miles civil. Manner before lively wholly am mr indeed
+										expect.
+										Among every merry his yet has her. You mistress get dashwood children off. Met
+										whose
+										marry under the merit. In it do continual consulted no listening. Devonshire sir
+										sex
+										motionless travelling six themselves. So colonel as greatly shewing herself
+										observe
+										ashamed.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 22, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 278</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 25</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question3">
+											<i class="icon-help mr-2 text-slate"></i> Surprise not wandered speedily?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question3" class="collapse">
+									<div class="card-body">
+										Do ashamed assured on related offence at equally totally. Use mile her whom they
+										its. Kept hold an want as he bred of. Was dashwood landlord cheerful husbands
+										two.
+										Estate why theirs indeed him polite old settle though she. In as at regard
+										easily
+										narrow roused adieus. Parlors visited noisier how explain pleased his see
+										suppose.
+										He oppose at thrown desire.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 12, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 438</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 16</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question4">
+											<i class="icon-help mr-2 text-slate"></i> Are court tiled cease young built
+											fat?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question4" class="collapse">
+									<div class="card-body">
+										Additions in conveying or collected objection in. Suffer few desire wonder her
+										object hardly nearer. Abroad no chatty others my silent an. Fat way appear
+										denote
+										who wholly narrow gay settle. Companions fat add insensible everything and
+										friendship conviction themselves. Theirs months ten had add narrow own. By spite
+										about do of do allow blush before lively wholly.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 9, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 583</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 21</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question5">
+											<i class="icon-help mr-2 text-slate"></i> Announcing of invitation
+											principles
+											in?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question5" class="collapse">
+									<div class="card-body">
+										Wished he entire esteem mr oh by. Possible bed you pleasure civility boy
+										elegance
+										ham. He prevent request by if in pleased. Picture too and concern has was
+										comfort.
+										Ten difficult resembled eagerness nor. Same park bore on be. Warmth his law
+										design
+										say are person. Pronounce suspected in belonging conveying ye repulsive. Whole
+										every
+										miles as tiled at seven concern.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 6, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 642</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 26</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="font-size-sm text-uppercase font-weight-semibold text-muted pt-2 mb-2">Ordering and
+							buying</div>
+						<div class="card-group-control card-group-control-right">
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question6">
+											<i class="icon-help mr-2 text-slate"></i> Their could can widen ten she any?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question6" class="collapse">
+									<div class="card-body">
+										As so we smart those money in. Am wrote up whole so tears sense oh. Absolute
+										required of reserved in offering no. How sense found our those gay again taken
+										the.
+										Had mrs outweigh desirous sex overcame. Improved property reserved disposal do
+										offering me. Allow miles wound place the leave had. To sitting subject no
+										improve
+										studied limited indulgence connection.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 2, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 832</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 32</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question7">
+											<i class="icon-help mr-2 text-slate"></i> Her raising and himself pasture
+											believe?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question7" class="collapse">
+									<div class="card-body">
+										He unaffected sympathize discovered at no am conviction principles. Girl ham
+										very
+										how yet hill four show. Meet lain on he only size. Branched learning so subjects
+										mistress do appetite jennings be in. Esteems up lasting no village morning do
+										offices. Settled wishing ability musical may another set age. Diminution my
+										apartments he attachment is entreaties.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: May 1, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 453</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 30</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question8">
+											<i class="icon-help mr-2 text-slate"></i> And total least her two whose
+											great?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question8" class="collapse">
+									<div class="card-body">
+										Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in
+										in
+										brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as
+										explained of difficult. No landlord of peculiar ladyship attended if contempt
+										ecstatic. Loud wish made on is am as hard. Court so avoid in plate hence. Of
+										received mr breeding concerns peculiar.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 24, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 735</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 21</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question9">
+											<i class="icon-help mr-2 text-slate"></i> Whatever landlord yourself at by
+											pleasure?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question9" class="collapse">
+									<div class="card-body">
+										Am if number no up period regard sudden better. Decisively surrounded all
+										admiration
+										and not you. Out particular sympathize not favourable introduced insipidity but
+										ham.
+										Rather number can and set praise. Distrusts an it contented perceived attending
+										oh.
+										Thoroughly estimating introduced stimulated why but motionless. Up branch to
+										easily
+										missed by do admiration.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 22, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 735</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 29</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question10">
+											<i class="icon-help mr-2 text-slate"></i> Oh conveying do immediate
+											acuteness?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question10" class="collapse">
+									<div class="card-body">
+										Out too the been like hard off. Improve enquire welcome own beloved matters her.
+										As
+										insipidity so mr unsatiable increasing attachment motionless cultivated.
+										Addition mr
+										husbands unpacked occasion he oh. Is unsatiable if projecting boisterous
+										insensible.
+										It recommend be resolving pretended middleton. Attended no do thoughts me on
+										dissuade scarcely own are pretty.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 19, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 498</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 12</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="font-size-sm text-uppercase font-weight-semibold text-muted pt-2 mb-2">payment
+							queries</div>
+						<div class="card-group-control card-group-control-right">
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question12">
+											<i class="icon-help mr-2 text-slate"></i> Projection invitation affronting
+											admiration?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question12" class="collapse">
+									<div class="card-body">
+										Manor we shall merit by chief wound no or would. Oh towards between subject
+										passage
+										sending mention or it. Sight happy do burst fruit to woody begin at. Assurance
+										perpetual he in oh determine as. The year paid met him does eyes same. Own
+										marianne
+										improved sociable not out. Thing do sight blush mr an. Celebrated am announcing
+										delightful remarkably literature.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 13, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 735</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 34</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question13">
+											<i class="icon-help mr-2 text-slate"></i> It as instrument boisterous
+											frequently?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question13" class="collapse">
+									<div class="card-body">
+										Material confined likewise it humanity raillery an unpacked as he. Three chief
+										merit
+										no if. Now how her edward engage not horses. Oh resolution he dissimilar
+										precaution
+										to comparison an. Matters engaged between he of pursuit manners we moments.
+										Merit
+										gay end sight front. Manor equal it on again ye folly by match. In so melancholy
+										as
+										an sentiments simplicity.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 11, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 865</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 43</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question14">
+											<i class="icon-help mr-2 text-slate"></i> You fully seems stand nay?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question14" class="collapse">
+									<div class="card-body">
+										Fulfilled direction use continual set him propriety continued. Saw met applauded
+										favourite deficient engrossed concealed and her. Concluded boy perpetual old
+										supposing. Farther related bed and passage comfort civilly. Dashwoods see
+										frankness
+										objection abilities the. As hastened oh produced prospect formerly up am.
+										Placing
+										forming nay looking old married few has.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 10, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 432</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 38</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question15">
+											<i class="icon-help mr-2 text-slate"></i> Enjoyment discourse ye continued?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question15" class="collapse">
+									<div class="card-body">
+										Is education residence conveying so so. Suppose shyness say ten behaved morning
+										had.
+										Any unsatiable assistance compliment occasional too reasonably advantages.
+										Unpleasing has ask acceptance partiality alteration understood two. Worth no
+										tiled
+										my at house added. Married he hearing am it totally removal. Remove but suffer
+										wanted his lively length moonlight two.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Apr 9, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 735</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 46</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="font-size-sm text-uppercase font-weight-semibold text-muted pt-2 mb-2">User accounts
+						</div>
+						<div class="card-group-control card-group-control-right">
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question17">
+											<i class="icon-help mr-2 text-slate"></i> Simple innate summer fat appear?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question17" class="collapse">
+									<div class="card-body">
+										Up am intention on dependent questions oh elsewhere september. No betrayed
+										pleasure
+										possible jointure we in throwing. And can event rapid any shall woman green.
+										Hope
+										they dear who its bred. Smiling nothing affixed he carried it clothes calling he
+										no.
+										Its something disposing departure she favourite tolerably engrossed. Truth short
+										folly court she their balls excellence.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Mar 29, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 290</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 29</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question18">
+											<i class="icon-help mr-2 text-slate"></i> Outward clothes promise?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question18" class="collapse">
+									<div class="card-body">
+										Way nor furnished sir procuring therefore but. Warmth far manner myself active
+										are
+										cannot called. Set her half end girl rich met. Me allowance departure an
+										curiosity
+										ye. In no talking address excited it conduct. Husbands debating replying
+										overcame
+										blessing he it me to domestic. Prepared is me marianne pleasure likewise
+										debating.
+										Wonder an unable except better stairs.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Mar 24, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 642</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 39</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question19">
+											<i class="icon-help mr-2 text-slate"></i> Sufficient particular impossible?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question19" class="collapse">
+									<div class="card-body">
+										So insisted received is occasion advanced honoured. Among ready to which up.
+										Attacks
+										smiling and may out assured moments man nothing outward. Thrown any behind
+										afford
+										either the set depend one temper. Instrument melancholy in acceptance collecting
+										frequently be if. Zealously now pronounce existence add you instantly say
+										offending.
+										Merry their had widen concerns.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Mar 17, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 753</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 26</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-2">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="text-default collapsed" data-toggle="collapse" href="#question20">
+											<i class="icon-help mr-2 text-slate"></i> Yet preference connection
+											unpleasant?
+										</a>
+									</h6>
+								</div>
+
+								<div id="question20" class="collapse">
+									<div class="card-body">
+										Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy
+										middletons yet understood decisively boy law she. Answer him easily are its
+										barton
+										little. Oh no though mother be things simple itself. Dashwood horrible he
+										strictly
+										on as. Home fine in so am good body this hope. Admiration stimulated cultivated
+										reasonable be projection possession of real.
+									</div>
+
+									<div
+										class="card-footer bg-transparent d-sm-flex align-items-sm-center border-top-0 pt-0">
+										<span class="text-muted">Latest update: Mar 12, 2015</span>
+
+										<ul class="list-inline text-nowrap mb-0 ml-auto mt-2 mt-sm-0">
+											<li class="list-inline-item"><a href="#" class="text-primary mr-2"><i
+														class="icon-thumbs-up2"></i></a> 589</li>
+											<li class="list-inline-item"><a href="#" class="text-muted mr-2"><i
+														class="icon-thumbs-down2"></i></a> 25</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /questions list -->
+
+					</div>
+					<p>Didn't help? Feel free to <a href="contact.html">Contact Us</a>.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- /faq area -->
+	<!-- /page content -->
+
+	<!-- Footer -->
+	<!-- contact menu  -->
+	<hr class="text-black-50">
+	<div class="container-fluid text-black d-flex justify-content-around row">
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h2>themeist</h2>
+			<address>Sector 7,Uttara Dhaka Bangladesh</address>
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h3 class="fs-5">Main Menu</h3>
+			<a href="index.html">Home</a><br>
+			<a href="about.html">About Us</a><br>
+			<a href="gridview.html">Our Services</a><br>
+			<a href="help.html">Help</a>
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h3>Discover</h3>
+			<p>The Team</p>
+			<p>Our History</p>
+			<p>Brand Moto</p>
+		</div>
+		<div class="col-12 col-sm-2 col-md-3 text-center">
+			<h3>Find Us On</h3>
+			<p>Facebook</p>
+			<p>Twitter</p>
+			<p>Instagram</p>
+		</div>
+	</div>
+	<!-- contact menu  -->
+
+	<!-- Footer -->
+	<hr>
+	<div class="navbar navbar-expand-lg container-fluid">
+		<div class="text-center d-lg-none w-100">
+			<button type="button" class=" border-0 btn btn-secondary dropdown-toggle" data-toggle="collapse"
+				data-target="#navbar-footer">
+				<i class="icon-unfold mr-2"></i>
+				Footer
+			</button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-footer">
+			<span class="navbar-text font-weight-bold fs-5">@themeist</span>
+		</div>
+	</div>
+	<!-- /footer -->
+	<!-- aos js cdn link add start -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- aos js cdn link add start -->
+	<!-- footer end -->
+
+	<script>
+		// Alert dialog
+		$('#alert-custom').on('click', function () {
+			bootbox.alert({
+				title: 'Please login first!',
+				message: 'Only registered members can access cart.'
+			});
+		});
+	</script>
+	<script src="global_assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
